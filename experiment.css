@@ -1,0 +1,199 @@
+/* Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  display: flex;
+background-color: #0e131f !important;
+}
+.col{
+  justify-content: center;
+  justify-items: center;
+  width: 400px;
+
+}
+
+
+  
+.card{
+  --bs-card-bg: rgb(255, 255, 255);
+}
+.bg-body-tertiary {
+  --bs-bg-opacity: 1;
+  background-color : #212529 !important;
+}
+.slide-container{
+  max-width: 1120px;
+  padding: 40px 0;
+ 
+
+}
+.slide-content{
+  margin: 0 40px;
+  overflow: hidden;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: row;
+ 
+}
+/* Ensure swiper container is displayed properly */
+.swiper {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Ensure swiper slide container accommodates all slides */
+.card-wrapper {
+    display: flex;
+    width: auto; /* Adjust to fit all slides horizontally */
+}
+
+/* Style each card slide */
+.swiper-slide {
+    flex-shrink: 0;
+    width: 300px; /* Adjust card width as needed */
+    margin-right: 20px; /* Spacing between cards */
+}
+
+.img1{
+  height: 40px;
+  width: 40px;
+  margin-right: 10px;
+}
+
+
+
+.card1{
+  border-radius: 25px;
+  background-color: #ffffff;
+  flex-direction: row;
+}
+.image-content,
+.card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+.image-content{
+  position: relative;
+  row-gap: 5px;
+  padding: 25px 0;
+}
+.overlay{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #16191f;
+  border-radius: 25px 25px 0 25px;
+}
+.overlay::before,
+.overlay::after{
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  background-color: #141823;
+}
+.overlay::after{
+  border-radius: 0 25px 0 0;
+  background-color: #FFF;
+}
+.card-image{
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background: #FFF;
+  padding: 3px;
+}
+.card-image .card-img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #0e131f;
+}
+.name{
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}
+.description{
+  font-size: 14px;
+  color: #707070;
+  text-align: center;
+}
+.button{
+  border: none;
+  font-size: 16px;
+  color: #FFF;
+  padding: 8px 16px;
+  background-color: #101218;
+  border-radius: 6px;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button:hover{
+  background: #265DF2;
+}
+
+.swiper-navBtn{
+  color: #6E93f7;
+  transition: color 0.3s ease;
+}
+.swiper-navBtn:hover{
+  color: #4070F4;
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+  font-size: 35px;
+  z-index: 7895456;
+}
+.swiper-button-next{
+  right: 0;
+}
+.swiper-button-prev{
+  left: 0;
+}
+.swiper-pagination-bullet{
+  background-color: #10131c;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active{
+  background-color: #4070F4;
+}
+
+
+
+/* Stack cards vertically on small screens */
+@media (max-width: 576px) {
+  .slide-content {
+    padding: 00px 0;
+  }
+  .card1 {
+    width: 90%;
+  }
+  .card-wrapper {
+    flex-direction: column; 
+  }  
+
+  .slide-container{
+    width: 100v;
+   margin-left: 50px;
+  
+  
+
+  }
+}
